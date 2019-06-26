@@ -1,0 +1,20 @@
+[ name       ]  example
+[ id         ]  20190626-075732-03e0a7da
+[ data       ]  source => dat: 20 x 2
+[ start      ]  2019-06-26 07:57:32
+
+> png("mygraph.png")
+
+> par(mar = c(15, 4, 0.5, 0.5))
+
+> barplot(setNames(dat$number, dat$name), las = 2)
+
+> dev.off()
+null device 
+          1 
+[ end        ]  2019-06-26 07:57:32
+[ elapsed    ]  Ran report in 0.02778387 secs
+[ artefact   ]  mygraph.png: a942fac36947c6c6852a355f3bbc0542
+[ commit     ]  example/20190626-075732-03e0a7da
+[ copy       ]
+[ success    ]  :)
