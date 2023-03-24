@@ -3,3 +3,26 @@ database:
     driver: RSQLite::SQLite
     args:
       dbname: source.sqlite
+
+remote:
+  science:
+    driver: montagu::montagu_orderlyweb_remote
+    args:
+      host: example.com
+      port: 12345
+      username: username
+      password: password
+    slack_url: example.com/slack
+    teams_url: example.com/teams
+  production:
+    driver: montagu::montagu_orderlyweb_remote
+    args:
+      host: example.com
+      port: 12346
+      username: username
+      password: password
+    primary: true
+    default_branch_only: true
+    slack_url: example.com/slack
+    teams_url: example.com/teams
+
