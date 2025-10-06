@@ -2,13 +2,13 @@
 unlink(".outpack", recursive = TRUE)
 
 stopifnot(identical(
-  orderly2::orderly_list_src(),
+  orderly::orderly_list_src(),
   c("computed-resource", "depends", "diagnostic", "diagnostic-param", "explicit", "parameters")))
 
-orderly2::orderly_init()
-orderly2::orderly_run("parameters", list(a = 10, c = 30))
-orderly2::orderly_run("explicit")
-orderly2::orderly_run("depends")
-orderly2::orderly_run("computed-resource")
-orderly2::orderly_run("diagnostic", list(touchstone = "my-touchstone", touchstone_name = "my-touchstone-name"))
-orderly2::orderly_run("diagnostic-param", list(touchstone = "my-touchstone", touchstone_name = "my-touchstone-name", a = 1, b = 2, c = 3))
+orderly::orderly_init()
+orderly::orderly_run("parameters", list(a = 10, c = 30))
+orderly::orderly_run("explicit")
+orderly::orderly_run("depends")
+orderly::orderly_run("computed-resource")
+orderly::orderly_run("diagnostic", list(touchstone = "my-touchstone", touchstone_name = "my-touchstone-name"))
+orderly::orderly_run("diagnostic-param", list(touchstone = "my-touchstone", touchstone_name = "my-touchstone-name", a = 1, b = 2, c = 3))

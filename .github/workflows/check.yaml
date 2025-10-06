@@ -23,7 +23,7 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          packages: mrc-ide/orderly2
+          packages: mrc-ide/orderly
 
       - name: Check
         run:
