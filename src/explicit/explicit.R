@@ -1,5 +1,5 @@
-orderly2::orderly_resource("data.csv")
-orderly2::orderly_artefact(
+orderly::orderly_resource("data.csv")
+orderly::orderly_artefact(
   description = "A graph of things",
   files = "mygraph.png")
 
