@@ -1,6 +1,6 @@
-# orderly2-example
+# orderly-example
 
-This repo exists so that we have something to clone in tooling around orderly2; notably [`packit-deploy`](https://github.com/mrc-ide/packit-deploy)
+This repo exists so that we have something to clone in tooling around orderly; notably [`packit-deploy`](https://github.com/mrc-ide/packit-deploy)
 
 There is a set of outpack files that can be unpacked by running
 
